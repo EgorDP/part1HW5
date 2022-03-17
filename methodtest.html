@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP With Javascript</title>
+    <link rel="stylesheet" href="./methodStyle.css" media="screen" type="text/css"> 
+</head>
+<body>
+    <h1>Welcome to this <span>Form Submission</span></h1>
+    <form action="https://httpbin.org/post" method="POST">
+        <div class="formBlock">
+            <label for="id"><span>Enter</span> record ID: </label>
+            <input type="text" name="id" id="id" required>
+        </div>
+        
+        <div class="formBlock">
+            <label for="name"><span>Enter</span> article name: </label>
+            <input type="text" name="name" id="name" >
+        </div>
+
+        <div class="formBlock">
+            <label for="body"><span>Enter</span> article body: </label>
+            <input type="text" name="body" id="body" >
+        </div>
+        
+        <time></time>
+        <button type="button">Post Button</button>
+        <button type="button">Get Button</button>
+        <button type="button">Put Button</button>
+        <button type="button">Delete Button</button>
+        <pre><output id="response"></output></pre> 
+
+    </form>
+
+    <script type="module">
+        import {buttonListeners} from './method.js';
+        buttonListeners();
+    </script>
+</body>
+</html>

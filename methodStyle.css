@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(30,30,30);
+    color: rgb(218, 212, 212); 
+    font-family: Consolas, "Courier New", monospace;
+    padding: 0 2vw 0 2vw; 
+}
+h1 {
+    color: #569cd6;
+    font-size: 25px; 
+    margin: 2vh 0;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    line-height: .75;
+
+}
+h1 > span {
+    color: #9cdcfe;
+}
+label {
+    display: inline-block; 
+    width: 20ch; 
+}
+
+form > button:nth-child(5) {
+    margin-top: 5vw; 
+}
+label {
+    color: #9cdcfe;
+}
+input {
+    color: rgb(37, 37, 37);
+
+}
+.formBlock span {
+    color: #d7ba7d;
+}
+button {
+    color: #d7ba7d;
+    background-color: rgb(51, 50, 50);
+    border-radius: 20px; 
+}
+input {
+    border-radius: 10px; 
+}
+button:hover {
+    border-color: #c586c0;
+}
+output {
+    font-size: 15px; 
+    color: #d4d4d4;
+}
